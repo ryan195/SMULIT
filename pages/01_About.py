@@ -9,6 +9,7 @@ st.sidebar.title("LegalEase")
 # Use the following line to include your style.css file
 #st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
 
+st.header("LegalEase")
 st.subheader("About Us!")
 
 harry = Image.open("assets/harry.jpg")

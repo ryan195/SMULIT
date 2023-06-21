@@ -64,3 +64,5 @@ if authenticate == 'Login' :
                 st.info(e)
         else :    
             st.write("Welcome")
+
+st.write("*Copyright © 2023 TPJC - Harry, Brendan, Yong Jun, Ryan*") 
