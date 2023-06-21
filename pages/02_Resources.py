@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 legalease = Image.open("assets/LegalEase.jpg")
 
 st.set_page_config(page_title="LegalEase - Resources", page_icon = "👨🏻‍⚖️", layout = "centered", initial_sidebar_state = "auto")
-st.sidebar.title("LegalEase")
+#st.sidebar.title("LegalEase")
 st.sidebar.image(legalease)
 
 lawsoc = Image.open("assets/lawsoc.jpg")
@@ -19,15 +19,23 @@ tfc = Image.open("assets/tfc.jpg")
 mindfi = Image.open("assets/mindfi.jpg")
 safespace = Image.open("assets/safespace.jpg")
 kura = Image.open("assets/kura.jpg")
+oura = Image.open("assets/oura.jpg")
+applewatch = Image.open("assets/applewatch.jpg")
+thync = Image.open("assets/thync.jpg")
+muse = Image.open("assets/muse.jpg")
+zeeq = Image.open("assets/zeeq.jpg")
+apollo = Image.open("assets/apollo.jpg")
+
 
 st.header("LegalEase")
 st.subheader("Resources")
 
 st.write("*Feeling burnt out and need help? Here are some mental health resources to get you started!*")
 
-tab1, tab2, tab3 = st.tabs(["Websites", "Mobile Applications", "Devices"])
+tab1, tab2, tab3 = st.tabs(["Websites", "Applications", "Devices"])
 
 with tab1:
+    st.write("The organisations and/or programmes below are targeted to assist lawyers who may be struggling with their work commitments, especially with the post-COVID transition to a hybrid working environment. Do check them out below!")
     with st.container():
         image_column, text_column = st.columns((1,3))
         with image_column:
@@ -70,6 +78,7 @@ with tab1:
             
 
 with tab2:
+    st.write("The following applications aim to provide additional support to lawyers who wish to seek help either anonymously via peer support of through professional help. Do check them out below!")
     with st.container():
         image_column, text_column = st.columns((1,3))
         with image_column:
@@ -119,7 +128,48 @@ with tab2:
             st.write("Discover Kura Kura, your digital companion fostering emotional vulnerability. Engage in our interactive games and prompts, encouraging open expression.")
 
 with tab3:
-
-    st.write("Devices")
+    st.write("The following wearable items can aid mental health by monitoring sleep patterns, tracking heart rate variability, and providing tools for stress management and relaxation. Do check them out below!")
+    with st.container():
+        image_column, text_column = st.columns((1,3))
+        with image_column:
+            st.image(oura)
+        with text_column:
+            st.subheader("[Oura Ring](https://ouraring.com/)")
+            st.write("*The Oura Ring aids mental health by monitoring sleep patterns, tracking heart rate variability (HRV), and providing personalized recommendations for optimizing sleep and recovery.*")
+    with st.container():
+        image_column, text_column = st.columns((1,3))
+        with image_column:
+            st.image(applewatch)
+        with text_column:
+            st.subheader("[Apple Watch](https://www.apple.com/sg/watch/)")
+            st.write("*The Apple Watch contributes to mental health by monitoring heart rate, offering guided breathing exercises for stress management, promoting physical activity, and providing access to mindfulness and meditation apps.*")
+    with st.container():
+        image_column, text_column = st.columns((1,3))
+        with image_column:
+            st.image(thync)
+        with text_column:
+            st.subheader("[Thync](https://thync.com/)")
+            st.write("*Thync is a device that aims to enhance mental well-being through neurostimulation, using electrical currents to promote relaxation or boost energy levels.*")
+    with st.container():
+        image_column, text_column = st.columns((1,3))
+        with image_column:
+            st.image(muse)
+        with text_column:
+            st.subheader("[Muse](https://choosemuse.com/)")
+            st.write("*The Muse headband helps with mental health by measuring brainwave activity during meditation, providing real-time feedback to improve focus and relaxation.*")
+    with st.container():
+        image_column, text_column = st.columns((1,3))
+        with image_column:
+            st.image(zeeq)
+        with text_column:
+            st.subheader("[ZEEQ Smart Pillow](https://sleepgadgets.io/zeeq-smart-pillow/)")
+            st.write("*The ZEEQ Smart Pillow contributes to mental health by monitoring sleep quality, offering features like snoring detection and gentle vibrations to encourage better sleep habits.*")
+    with st.container():
+        image_column, text_column = st.columns((1,3))
+        with image_column:
+            st.image(apollo)
+        with text_column:
+            st.subheader("[Apollo Neuro](https://apolloneuro.com/)")
+            st.write("*Apollo Neuro is a wearable device that utilizes gentle vibrations to promote stress reduction, relaxation, and improved sleep by activating the body's natural responses and helping regulate the nervous system.*")
 
 st.write("*Copyright © 2023 TPJC - Harry, Brendan, Yong Jun, Ryan*") 
