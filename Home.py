@@ -2,6 +2,8 @@ import streamlit as st
 import pyrebase
 import requests
 
+st.set_page_config(page_title="LegalEase - Home", page_icon = "👨🏻‍⚖️", layout = "centered", initial_sidebar_state = "auto")
+
 firebaseConfig = {
   "apiKey": "AIzaSyASBQQV0tcGclITfO20afhXkvyNw37PE1M",
   "authDomain": "smulit-e8993.firebaseapp.com",
