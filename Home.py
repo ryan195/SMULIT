@@ -3,6 +3,10 @@ import pyrebase
 import requests
 
 st.set_page_config(page_title="LegalEase - Home", page_icon = "👨🏻‍⚖️", layout = "centered", initial_sidebar_state = "auto")
+st.sidebar.title("LegalEase")
+
+st.header("LegalEase")
+st.subheader("Home")
 
 firebaseConfig = {
   "apiKey": "AIzaSyASBQQV0tcGclITfO20afhXkvyNw37PE1M",
