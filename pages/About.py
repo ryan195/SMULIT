@@ -22,30 +22,28 @@ st.write("Current selection:", selected)
 if selected == "Overview":
     st.subheader("Overview")
     st.markdown("""
-    **Overall Theme: Emergence of a Technoworld - A Post COVID-19 Experience**
+    **Overall Theme: Bridging the Tech-Law Divide**
 
-    Synopsis: The COVID-19 pandemic has catalysed the digitalisation of our everyday lives, whereby buzzwords such as “Go Digital”, “Virtual World” are no longer a mere hype, but are increasingly prevalent and welcomed in today’s world. In fact, key industry players from the traditional and essential sectors, such as the aviation and education industries, have been actively seeking ways to incorporate technology into their daily operations, to effectively transform their businesses from “physically limited” to “virtually unlimited”.
+    **Chosen Theme and Statement: Hybrid Working - Mental Health**
 
-    **Chosen Theme: Re-defining the Post-Pandemic Traveling Landscape**
+    Problem Statement: Fully remote work arrangements during the pandemic has led to many lawyers feeling burnt out. This was in part due to the lack of social interaction and the subsequent feelings of isolation, alongside the blurring of lines between rest and work. How might we then utilise technology to mitigate such risks and help lawyers with their mental health when it comes to hybrid working arrangements?
 
-    Problem Statement: In a post-pandemic era, traveling around the globe has emerged as the top priority in various tourists’ agenda, putting the aviation and tourism sectors under the spotlight! As such, curate an application or software that enhances tourists’ experience and/or optimises the operations of the aviation industry.
     """)
 
 elif selected == "Summary":
     st.subheader("Summary")
     st.markdown("""
-    For LifeHack 2023, we have chosen the theme of Re-defining the Post-Pandemic Traveling Landscape, which requires us to ideate an application to reintroduce travel to post-COVID travellers.
+    For SMU-LIT Hackathon 2023, we have chosen the theme of Hybrid Working, which requires us to ideate an application to support the mental health of lawyers working in hybrid arrangements.
 
-    To address this problem statement, we have come up with *PassionPassport*, a web-application that recommends travel itineraries based on one's hobbies.
+    To address this problem statement, we have come up with *LegalEase*, *TBD*.
     
     **Inspiration**
 
-    During COVID-19, most of us had to experience lockdowns within our own countries, and were not allowed to travel abroad for 1-2 years. When the borders were re-opened, many people were excited to travel once again - however the transition was still hard as they may have forgotten how it felt like to travel, including the planning process.
-    In addition, with the recent popularity of ChatGPT, we thus planned to build a web application that uses ChatGPT to generate a travel itinerary for users, based on their hobbies as inputs, especially for those who do not know where to travel after so long. 
+    TBD
 
     **What it does**
 
-    Users can key in an input (e.g a hobby - swimming) for himself, along with another friend's hobby into our web application. Based on the inputs, ChatGPT will then recommend a country as well as a few locations to travel to. A detailed itinerary, including descriptions and images of these key locations, will then be generated to better inform the user of these locations to hype them up for the trip.
+    TBD
 
     **How we built it**
 
@@ -53,7 +51,7 @@ elif selected == "Summary":
 
     **What makes our solution stand out**
 
-    Unlike other solutions that provides limited input choices, our usage of the OpenAI API allows us to customise different itineraries based on different categories of inputs, including hobbies, cost, and even personality traits as examples.
+    TBD
 
     **Some key challenges we faced**
 
