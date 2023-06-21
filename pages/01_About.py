@@ -73,7 +73,8 @@ elif selected == "Our Team":
             st.image(harry)
         with text_column:
             st.subheader("Harry Chang")
-            st.write("*Data Science and Analytics*")
+            st.write("**Product Analytics Intern, Sephora**")
+            st.write("*NUS Data Science and Analytics '24*")
             st.markdown("""
             Role: Front-end, Branding Assets, Copywriting
 
@@ -85,7 +86,8 @@ elif selected == "Our Team":
             st.image(brendan)
         with text_column:
             st.subheader("Brendan Cheong")
-            st.write("*Business Analytics and Economics*")
+            st.write("**Software Engineer Intern, Hypotenuse AI**")
+            st.write("*NUS Business Analytics and Economics '24*")
             st.markdown("""
             Role: Front-end, Back-end
 
@@ -98,9 +100,10 @@ elif selected == "Our Team":
             st.empty()
         with text_column:
             st.subheader("Tay Yong Jun")
-            st.write("*Law*")
+            st.write("**Legal Intern (Banking & Finance/Debt Capital Market), Rajah and Tann Asia**")
+            st.write("*NUS Law '25*")
             st.markdown("""
-            Role: Legal Advisor
+            Role: Legal Advisor, User Tester
 
             """)
     with st.container():
@@ -109,7 +112,8 @@ elif selected == "Our Team":
             st.image(ryan)
         with text_column:
             st.subheader("Ryan Tan")
-            st.write("*Business Analytics*")
+            st.write("**Business Data Automation and Supply Chain Analyst, Apple**")
+            st.write("*NUS Business Analytics '24*")
             st.markdown("""
             Role: Back-end
 
