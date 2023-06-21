@@ -1,12 +1,18 @@
 import streamlit as st
 import pyrebase
 import requests
+from PIL import Image
+
+
+legalease = Image.open("assets/LegalEase.jpg")
 
 st.set_page_config(page_title="LegalEase - Home", page_icon = "👨🏻‍⚖️", layout = "centered", initial_sidebar_state = "auto")
-st.sidebar.title("LegalEase")
+#st.sidebar.title("LegalEase")
+st.sidebar.image(legalease)
 
 st.header("LegalEase")
 st.subheader("Home")
+st.write("*Empowering lawyers in hybrid work environments with mental health support & optimal task scheduling*")
 
 firebaseConfig = {
   "apiKey": "AIzaSyASBQQV0tcGclITfO20afhXkvyNw37PE1M",

@@ -2,9 +2,11 @@ import streamlit as st
 from PIL import Image
 from streamlit_option_menu import option_menu
 
+legalease = Image.open("assets/LegalEase.jpg")
+
 st.set_page_config(page_title="LegalEase - About Us", page_icon = "👨🏻‍⚖️", layout = "centered", initial_sidebar_state = "auto")
-st.sidebar.title("LegalEase")
-#st.sidebar.image("assets/pp_logo2.jpg", use_column_width=True)
+#st.sidebar.title("LegalEase")
+st.sidebar.image(legalease)
 
 # Use the following line to include your style.css file
 #st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
@@ -40,7 +42,7 @@ elif selected == "Summary":
     
     **Inspiration**
 
-    TBD
+    The COVID-19 pandemic has drastically changed the way we work, and lawyers are no exception. Remote work arrangements have led to feelings of isolation, burnout, and stress, negatively impacting mental health. Drawing on our experiences as university students familiar with these challenges, we want to create a solution that improves the mental well-being of lawyers working in hybrid environments.
 
     **What it does**
 
@@ -57,6 +59,10 @@ elif selected == "Summary":
     **Some key challenges we faced**
 
     A key issue that we've faced is the transition from our typical skillset of HTML/CSS/Javascript to Streamlit, as we wanted to fully utilise the OpenAI API for easier facilitation of the back-end. In addition, we were also new to utilising Firebase to store user data for our login system, to track user history of previous queries using our app.
+
+    **What's next for LegalEase**
+
+    We aim to continue refining the AI's task scheduling capabilities and explore additional features that further support the mental well-being of legal professionals in a hybrid working environment. This could include virtual group activities, guided meditation sessions, and more.
 
     **Built with**
 
