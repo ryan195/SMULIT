@@ -16,7 +16,7 @@ st.subheader("About Us!")
 
 harry = Image.open("assets/harry.jpg")
 brendan = Image.open("assets/brendan.jpg")
-#vanessa = Image.open("assets/vanessa.jpg")
+yj = Image.open("assets/yj.jpg")
 ryan = Image.open("assets/ryan.jpg")
 
 selected_options = ["Overview", "Summary", "Our Team", "References"]
@@ -80,7 +80,6 @@ elif selected == "Our Team":
             st.image(harry)
         with text_column:
             st.subheader("Harry Chang")
-            st.write("**Product Analytics Intern, Sephora**")
             st.write("*NUS Data Science and Analytics '24*")
             st.markdown("""
             Role: Front-end, Branding Assets, Copywriting
@@ -93,7 +92,6 @@ elif selected == "Our Team":
             st.image(brendan)
         with text_column:
             st.subheader("Brendan Cheong")
-            st.write("**Software Engineer Intern, Hypotenuse AI**")
             st.write("*NUS Business Analytics and Economics '24*")
             st.markdown("""
             Role: Front-end, Back-end
@@ -103,11 +101,9 @@ elif selected == "Our Team":
     with st.container():
         image_column, text_column = st.columns((1.5,5))
         with image_column:
-            #st.image(vanessa)
-            st.empty()
+            st.image(yj)
         with text_column:
             st.subheader("Tay Yong Jun")
-            st.write("**Legal Intern (Banking & Finance/Debt Capital Market), Rajah and Tann Asia**")
             st.write("*NUS Law '25*")
             st.markdown("""
             Role: Legal Advisor, User Tester
@@ -119,7 +115,6 @@ elif selected == "Our Team":
             st.image(ryan)
         with text_column:
             st.subheader("Ryan Tan")
-            st.write("**Business Data Automation and Supply Chain Analyst, Apple**")
             st.write("*NUS Business Analytics '24*")
             st.markdown("""
             Role: Back-end

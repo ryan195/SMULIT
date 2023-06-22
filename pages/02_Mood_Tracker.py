@@ -15,7 +15,7 @@ st.sidebar.image(legalease)
 
 st.header("LegalEase")
 st.subheader("Mood Tracker with Journal")
-st.write("*Track your daily mood, journal entries, and visualize mood trends over time.*")
+st.write("*Track your daily mood, journal entries, and visualize mood trends over time!*")
 
 # Create a DataFrame to store mood and journal data
 data = pd.DataFrame(columns=["Date", "Mood", "Journal"])
