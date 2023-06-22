@@ -2,7 +2,6 @@ streamlit
 psycopg2-binary 
 python-dotenv
 openai
-pyrebase
 streamlit_pills
 beautifulsoup4
 pandas
