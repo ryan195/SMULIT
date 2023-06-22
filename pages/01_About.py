@@ -46,7 +46,13 @@ elif selected == "Summary":
 
     **What it does**
 
-    TBD
+    Our application will consist of three main features:
+
+    - **Daily Planner:** Powered by OpenAI, the AI suggests an optimal schedule based on the tasks inputted by the lawyer, taking into account the need for regular breaks and personal time to prevent burnout.
+
+    - **Mood Tracker:** Employees can log their mood and feelings daily, which can be visualized over time to help them understand their emotional patterns.
+
+    - **Mental Health Resources:** Curated content and resources on mental health support for lawyers.
 
     **How we built it**
 
