@@ -1,4 +1,5 @@
 streamlit
+streamlit_option_menu
 psycopg2-binary 
 python-dotenv
 openai
