@@ -15,7 +15,6 @@ st.set_page_config(page_title="LegalEase - Mood Tracker", page_icon = "👨🏻�
 st.sidebar.image(legalease)
 
 st.header("LegalEase")
-st.write("test")
 st.subheader("Mood Tracker with Journal")
 st.write("*Track your daily mood, journal entries, and visualize mood trends over time!*")
 
