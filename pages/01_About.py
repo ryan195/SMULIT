@@ -38,7 +38,7 @@ elif selected == "Summary":
     st.markdown("""
     For SMU-LIT Hackathon 2023, we have chosen the theme of Hybrid Working, which requires us to ideate an application to support the mental health of lawyers working in hybrid arrangements.
 
-    To address this problem statement, we have come up with *LegalEase*, *TBD*.
+    To address this problem statement, we have come up with *LegalEase*, a web application that empowers lawyers in hybrid work environments with mental health support & optimal task scheduling.
     
     **Inspiration**
 
@@ -60,11 +60,12 @@ elif selected == "Summary":
 
     **What makes our solution stand out**
 
-    TBD
+    With our AI-powered daily planner, lawyers can relieve their burden in case/task management, especially at times when they are feeling overwhelmed by the amount of work they need to deal with.
+    To supplement this, we have also built a mood tracker, which provides a unique data-driven approach for lawyers to monitor their mental health on a daily basis. 
 
     **Some key challenges we faced**
 
-    A key issue that we've faced is the transition from our typical skillset of HTML/CSS/Javascript to Streamlit, as we wanted to fully utilise the OpenAI API for easier facilitation of the back-end. In addition, we were also new to utilising Firebase to store user data for our login system, to track user history of previous queries using our app.
+    A key issue that we've faced is the transition from our typical skillset of HTML/CSS/Javascript to Streamlit, as we wanted to fully utilise the OpenAI API for easier facilitation of the back-end. In addition, we were also new to utilising Firebase to store user data for our login system, to track user history of previous inputs using our app.
 
     **What's next for LegalEase**
 
@@ -74,7 +75,7 @@ elif selected == "Summary":
 
     `Firebase` `Python` `Streamlit` `HTML` `CSS` `OpenAI API`
 
-    Github repo: TBD
+    Github repo: https://github.com/ryan195/SMULIT
 
     """)
 

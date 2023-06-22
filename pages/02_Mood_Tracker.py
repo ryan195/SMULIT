@@ -29,7 +29,7 @@ else:
 
 # Input form to track mood and journal entry
 date = st.date_input("Date")
-mood = st.slider("Mood (1-10)", 1, 10)
+mood = st.slider("Mood: 1 (lowest) - 10 (highest)", 1, 10)
 journal = st.text_area("Journal Entry")
 
 # Add mood and journal data to DataFrame
@@ -39,15 +39,15 @@ if st.button("Add Entry"):
     st.success("Entry added successfully!")
 
 # Display mood and journal data table
-st.subheader("Mood and Journal Entries")
-st.dataframe(data)
+#st.subheader("Mood and Journal Entries")
+#st.dataframe(data)
 
 # Perform sentiment analysis on journal entries
 if not data.empty:
     sid = SentimentIntensityAnalyzer()
     data["Sentiment Score"] = data["Journal"].apply(lambda x: sid.polarity_scores(x)["compound"])
-    st.subheader("Sentiment Analysis of Journal Entries")
-    st.dataframe(data[["Date", "Journal", "Sentiment Score"]])
+    st.subheader("Mood and Sentiment Analysis of Journal Entries")
+    st.dataframe(data[["Date", "Mood", "Journal", "Sentiment Score"]])
 
 # Display mood trends and sentiment scores over time
 st.subheader("Mood Trends and Sentiment Scores Over Time")
@@ -88,6 +88,7 @@ else:
     st.info("Add mood data to visualize trends.")
 
 # Create scatter plot with regression line
+st.subheader("Mood and Sentiment Score - Trend Analysis (R-squared value)")
 plt.figure(figsize=(8, 6))
 sns.regplot(data=data, x="Mood", y="Sentiment Score")
 plt.xlabel("Mood")
@@ -105,3 +106,10 @@ r_squared = r_value ** 2
 plt.text(x.min(), y.max(), f"R-square = {r_squared:.2f}", ha='left', va='top')
 
 st.pyplot(plt)
+
+st.subheader("Understanding the Metrics")
+tab1, tab2 = st.tabs(["Sentiment Score", "R-squared Value"])
+with tab1:
+    st.write("Sentiment scoring is a way to understand the emotions or attitudes expressed in text using special computer techniques. It involves analyzing words and phrases in the text and assigning them sentiment values (like positive, negative, or neutral). By combining these values, an overall sentiment score is calculated. This process often relies on pre-built sentiment models that contain information about how different words are associated with specific sentiments. The NLTK library is commonly used to perform this analysis by handling tasks like preparing the text, breaking it into meaningful parts, and matching words with sentiment values. However, it's important to keep in mind that sentiment analysis is not perfect, and the accuracy of the scores can vary depending on factors like the quality of the sentiment model and the specific context of the text being analyzed.")
+with tab2:
+    st.write("The R-squared value is a statistical measure that tells us how well the mood scores can explain the sentiment scores in the mood tracker. It represents the percentage of the variation in the sentiment scores that can be understood by changes in the mood scores. A higher R-squared value means that the mood scores provide a better understanding of the sentiment scores. However, it's important to remember that the R-squared value does not tell us about causation or the full picture of the relationship between mood and sentiment. It's just one way to assess how well the mood scores fit the sentiment scores in the analysis.")
